@@ -11,7 +11,8 @@ body {
   padding: 32px 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin-bottom: 16px;
 }
 
@@ -38,23 +39,33 @@ h1, h2 {
   resize: vertical;
 }
 
+/* ボタン共通 */
 button {
   border: none;
   border-radius: 8px;
   padding: 10px 16px;
   cursor: pointer;
   font-size: 0.95rem;
-  background: #4a67ff;
   color: #fff;
 }
 
-button:hover {
-  opacity: 0.92;
+/* 追加ボタン */
+.add-button {
+  background: #dc2626;
 }
 
+.add-button:hover {
+  background: #b91c1c;
+}
+
+/* キャンセルボタン */
 .cancel-button {
   margin-left: 8px;
   background: #6b7280;
+}
+
+.cancel-button:hover {
+  background: #4b5563;
 }
 
 .hidden {
@@ -88,10 +99,28 @@ button:hover {
   gap: 8px;
 }
 
+/* 編集ボタン */
 .edit-button {
   background: #0f766e;
 }
 
+.edit-button:hover {
+  background: #115e59;
+}
+
+/* 削除ボタン */
 .delete-button {
   background: #dc2626;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+.memo-form button[type="submit"] {
+  background: #dc2626;
+}
+
+.memo-form button[type="submit"]:hover {
+  background: #b91c1c;
 }
