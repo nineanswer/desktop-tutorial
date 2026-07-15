@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Yu Gothic", "Segoe UI", sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+h1, h2 {
+  margin-bottom: 16px;
+}
+
+.memo-form {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+#memoTitle,
+#memoContent {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  border: 1px solid #d7dcef;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+}
+
+#memoContent {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  background: #4a67ff;
+  color: #fff;
+}
+
+button:hover {
+  opacity: 0.92;
+}
+
+.cancel-button {
+  margin-left: 8px;
+  background: #6b7280;
+}
+
+.hidden {
+  display: none;
+}
+
+.memo-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.memo-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.memo-item h3 {
+  margin: 0 0 8px;
+}
+
+.memo-item p {
+  margin: 0 0 12px;
+  white-space: pre-wrap;
+}
+
+.memo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-button {
+  background: #0f766e;
+}
+
+.delete-button {
+  background: #dc2626;
+}

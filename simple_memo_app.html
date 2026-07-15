@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メモ帳アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>メモ帳</h1>
+
+    <section class="memo-form">
+      <input
+        type="text"
+        id="memoTitle"
+        placeholder="タイトルを入力"
+      >
+
+      <textarea
+        id="memoContent"
+        placeholder="メモの内容を入力"
+      ></textarea>
+
+      <button id="saveButton" type="button">
+        メモを追加
+      </button>
+
+      <button id="cancelButton" type="button" class="cancel-button hidden">
+        編集をキャンセル
+      </button>
+    </section>
+
+    <section>
+      <h2>メモ一覧</h2>
+      <div id="memoList" class="memo-list"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
